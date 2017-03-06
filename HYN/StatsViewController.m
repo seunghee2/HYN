@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  StatsViewController.m
 //  HYN
 //
-//  Created by 이승희 on 03/02/2017.
+//  Created by 이승희 on 06/03/2017.
 //  Copyright © 2017 이승희. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "StatsViewController.h"
 
-@interface HomeViewController ()
+@interface StatsViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation StatsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,8 +21,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
 
 @end

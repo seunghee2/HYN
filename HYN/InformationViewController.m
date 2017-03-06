@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  InformationViewController.m
 //  HYN
 //
-//  Created by 이승희 on 03/02/2017.
+//  Created by 이승희 on 06/03/2017.
 //  Copyright © 2017 이승희. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "InformationViewController.h"
 
-@interface HomeViewController ()
+@interface InformationViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation InformationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,8 +21,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
 
 @end
