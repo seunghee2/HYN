@@ -6,17 +6,18 @@
 //  Copyright © 2017 이승희. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 
-@interface ViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed: @"main_top.png"]];
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+    //self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed: @"main_top.png"]];
 }
 
 - (void)didReceiveMemoryWarning {
