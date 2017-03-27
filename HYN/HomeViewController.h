@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController <NSURLConnectionDelegate, NSURLConnectionDataDelegate, UITableViewDelegate, UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UITableView *menuTableView;
 
 @end
 
