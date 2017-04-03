@@ -10,7 +10,6 @@
 		1E5F2F411E6CFBF4002D3C2C /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5F2F401E6CFBF4002D3C2C /* InformationViewController.m */; };
 		1E5F2F441E6CFC1B002D3C2C /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5F2F431E6CFC1B002D3C2C /* StatsViewController.m */; };
 		1E5F2F471E6CFC2A002D3C2C /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5F2F461E6CFC2A002D3C2C /* UserViewController.m */; };
-		1E84160D1E7FC7B200230E02 /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E84160C1E7FC7B200230E02 /* ListTableViewCell.m */; };
 		1EAA86321E44D6C800065226 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA86311E44D6C800065226 /* main.m */; };
 		1EAA86351E44D6C800065226 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA86341E44D6C800065226 /* AppDelegate.m */; };
 		1EAA86381E44D6C800065226 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA86371E44D6C800065226 /* HomeViewController.m */; };
@@ -18,6 +17,8 @@
 		1EAA863E1E44D6C800065226 /* HYN.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA863C1E44D6C800065226 /* HYN.xcdatamodeld */; };
 		1EAA86401E44D6C800065226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EAA863F1E44D6C800065226 /* Assets.xcassets */; };
 		1EAA86431E44D6C800065226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EAA86411E44D6C800065226 /* LaunchScreen.storyboard */; };
+		1EC9010E1E927F2900A161F1 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC9010C1E927F2900A161F1 /* MenuTableViewCell.m */; };
+		1EC9010F1E927F2900A161F1 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EC9010D1E927F2900A161F1 /* MenuTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +28,6 @@
 		1E5F2F431E6CFC1B002D3C2C /* StatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsViewController.m; sourceTree = "<group>"; };
 		1E5F2F451E6CFC2A002D3C2C /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
 		1E5F2F461E6CFC2A002D3C2C /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
-		1E84160B1E7FC7B200230E02 /* ListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
-		1E84160C1E7FC7B200230E02 /* ListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
 		1EAA862D1E44D6C800065226 /* HYN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EAA86311E44D6C800065226 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1EAA86331E44D6C800065226 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +39,9 @@
 		1EAA863F1E44D6C800065226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EAA86421E44D6C800065226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EAA86441E44D6C800065226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EC9010B1E927F2900A161F1 /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
+		1EC9010C1E927F2900A161F1 /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
+		1EC9010D1E927F2900A161F1 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +60,15 @@
 			children = (
 				1EAA86361E44D6C800065226 /* HomeViewController.h */,
 				1EAA86371E44D6C800065226 /* HomeViewController.m */,
-				1E84160B1E7FC7B200230E02 /* ListTableViewCell.h */,
-				1E84160C1E7FC7B200230E02 /* ListTableViewCell.m */,
 				1E5F2F3F1E6CFBF4002D3C2C /* InformationViewController.h */,
 				1E5F2F401E6CFBF4002D3C2C /* InformationViewController.m */,
 				1E5F2F421E6CFC1B002D3C2C /* StatsViewController.h */,
 				1E5F2F431E6CFC1B002D3C2C /* StatsViewController.m */,
 				1E5F2F451E6CFC2A002D3C2C /* UserViewController.h */,
 				1E5F2F461E6CFC2A002D3C2C /* UserViewController.m */,
+				1EC9010B1E927F2900A161F1 /* MenuTableViewCell.h */,
+				1EC9010C1E927F2900A161F1 /* MenuTableViewCell.m */,
+				1EC9010D1E927F2900A161F1 /* MenuTableViewCell.xib */,
 			);
 			name = "Tab View";
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				1EAA86431E44D6C800065226 /* LaunchScreen.storyboard in Resources */,
 				1EAA86401E44D6C800065226 /* Assets.xcassets in Resources */,
+				1EC9010F1E927F2900A161F1 /* MenuTableViewCell.xib in Resources */,
 				1EAA863B1E44D6C800065226 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,8 +191,8 @@
 				1EAA86381E44D6C800065226 /* HomeViewController.m in Sources */,
 				1E5F2F441E6CFC1B002D3C2C /* StatsViewController.m in Sources */,
 				1EAA86351E44D6C800065226 /* AppDelegate.m in Sources */,
-				1E84160D1E7FC7B200230E02 /* ListTableViewCell.m in Sources */,
 				1EAA86321E44D6C800065226 /* main.m in Sources */,
+				1EC9010E1E927F2900A161F1 /* MenuTableViewCell.m in Sources */,
 				1EAA863E1E44D6C800065226 /* HYN.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
