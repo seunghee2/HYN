@@ -27,6 +27,7 @@
     NSMutableArray *frameArray;
     NSString *menu;
     BOOL isSortedByFavorites;
+    NSURLRequest *request;
 }
 @property (nonatomic, strong) NSMutableData *responseData;
 @property (weak, nonatomic) IBOutlet UIButton *button_bob;
@@ -43,7 +44,14 @@
 
 @implementation HomeViewController
 @synthesize responseData = _responseData;
-
+    
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.menuTableView.delegate = self;
@@ -60,10 +68,12 @@
     dateFormatter.dateFormat = @"hh:mm:ss";
     [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
     self.responseData = [NSMutableData data];
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat: @"http://168.188.127.132:8000/lineup/current/?time=%@", [dateFormatter stringFromDate: now]]]];
+    request = [NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat: @"http://168.188.127.132:8000/lineup/current/?time=%@", [dateFormatter stringFromDate: now]]]];
     
     [[NSURLConnection alloc] initWithRequest:request delegate: self];
 }
+    
+
 
 #pragma mark - NSURLConnection Delegates
 - (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
@@ -102,6 +112,23 @@
     [self.menuTableView reloadData];
 }
 
+    
+#pragma mark - Custom methods
+    
+- (IBAction) reloadAction:(id)sender {
+    [self.button_bob setImage:[UIImage imageNamed:@"category_01_bob_selected"] forState:UIControlStateNormal];
+    [self.sorting_by_favorites setImage:[UIImage imageNamed:@"sort_popular_selected"] forState:UIControlStateNormal];
+    
+    NSDate *now = [NSDate date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"hh:mm:ss";
+    [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
+    self.responseData = [NSMutableData data];
+    request = [NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat: @"http://168.188.127.132:8000/lineup/current/?time=%@", [dateFormatter stringFromDate: now]]]];
+    [[NSURLConnection alloc] initWithRequest:request delegate: self];
+}
+    
+    
 - (IBAction) selectSortingMethod:(UIButton *)sender {
     if (sender.tag == 0) {
         [self.sorting_by_favorites setImage:[UIImage imageNamed:@"sort_popular_selected"] forState:UIControlStateNormal];

@@ -19,6 +19,7 @@
 		1EAA86431E44D6C800065226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EAA86411E44D6C800065226 /* LaunchScreen.storyboard */; };
 		1EC9010E1E927F2900A161F1 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC9010C1E927F2900A161F1 /* MenuTableViewCell.m */; };
 		1EC9010F1E927F2900A161F1 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EC9010D1E927F2900A161F1 /* MenuTableViewCell.xib */; };
+		1EC901181E93697800A161F1 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC901171E93697800A161F1 /* TabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		1EC9010B1E927F2900A161F1 /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
 		1EC9010C1E927F2900A161F1 /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
 		1EC9010D1E927F2900A161F1 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		1EC901161E93697800A161F1 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		1EC901171E93697800A161F1 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 				1EAA86441E44D6C800065226 /* Info.plist */,
 				1EAA863C1E44D6C800065226 /* HYN.xcdatamodeld */,
 				1EAA86301E44D6C800065226 /* Supporting Files */,
+				1EC901161E93697800A161F1 /* TabBarViewController.h */,
+				1EC901171E93697800A161F1 /* TabBarViewController.m */,
 			);
 			path = HYN;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				1EAA86351E44D6C800065226 /* AppDelegate.m in Sources */,
 				1EAA86321E44D6C800065226 /* main.m in Sources */,
 				1EC9010E1E927F2900A161F1 /* MenuTableViewCell.m in Sources */,
+				1EC901181E93697800A161F1 /* TabBarViewController.m in Sources */,
 				1EAA863E1E44D6C800065226 /* HYN.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
